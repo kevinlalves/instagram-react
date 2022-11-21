@@ -1,0 +1,38 @@
+/* mobile first */
+.foot-size {
+  color: #c7c7c7;
+  font-size: 11px;
+  margin-top: 30px;
+}
+
+
+.sidebar {
+  display: none;
+  width: 293px;
+  position: fixed;
+  left: calc(50vw + 174px);
+}
+
+.side-left {
+  display: flex;
+  align-items: center;
+}
+
+.side-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.side-left img {
+  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+}
+
+@media (min-width: 936px) {
+  .sidebar {
+    display: block;
+  }
+}

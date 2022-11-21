@@ -1,0 +1,20 @@
+@media (min-width: 615px) {
+  .page {
+    margin-top: 88px;
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-page {
+    width: 614px;
+  }
+}
+
+/* for desktop */
+@media (min-width: 936px) {
+  .page-content {
+    width: 935px;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+  }
+}

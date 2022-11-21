@@ -1,0 +1,42 @@
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66px;
+  height: 66px;
+  background-image: url("../../public/assets/images/background.png");
+  background-size: 66px;
+  border-radius: 100%;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 84px;
+  margin-left: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  --stories-img-scale: scale(1, 1);
+}
+
+.story:hover {
+  --stories-img-scale: scale(1.1, 1.1);
+}
+
+.story img {
+  transform: var(--stories-img-scale);
+  width: 56px;
+  height: 56px;
+}
+
+.story p {
+  text-align: center;
+  height: 14px;
+  margin-top: 6px;
+  width: 66px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
