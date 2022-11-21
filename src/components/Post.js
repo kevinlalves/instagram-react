@@ -39,8 +39,8 @@ export default function Post(props) {
         <div className="reactions">
           <img src={users[props.post.id + 2].image} />
           <p>
-            Curtido por <span className="bold">respondeai</span> e
-            <span data-test="likes-number" className="bold"> outras {props.post.numLikes} pessoas</span>
+            Curtido por <span className="bold">{users[props.post.id + 2].name}</span> e
+            <span data-test="likes-number" className="bold"> outras {props.post.numLikes.toString().replace(/\B(?=(\d{3})+(?!\d))/, ".")} pessoas</span>
           </p>
         </div>
       </div>
